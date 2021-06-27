@@ -1,6 +1,9 @@
 # The original code for the library is here
 https://github.com/dandynaufaldi/particle-swarm-optimized-clustering
 
+# install
+  `pip install swarmk`
+  
 #use
 ```python
 import swarmk as sw
