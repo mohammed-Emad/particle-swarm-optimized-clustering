@@ -10,7 +10,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
-    'url': 'https://github.com/mohammed-Emad/particle-swarm-optimized-clustering',
+    url: 'https://github.com/mohammed-Emad/particle-swarm-optimized-clustering',
     packages=['swarmk'],
     classifiers=[
         "Programming Language :: Python :: 3",
