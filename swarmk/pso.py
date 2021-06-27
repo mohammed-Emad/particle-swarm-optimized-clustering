@@ -3,7 +3,7 @@ Optimizing centroid using K-Means style. In hybrid mode will use K-Means to seed
 """
 import numpy as np
 
-from particle import Particle
+from .particle import Particle
 
 
 class ParticleSwarmOptimizedClustering:
