@@ -2,10 +2,15 @@
 (dandynaufaldi/particle-swarm-optimized-clustering)[https://github.com/dandynaufaldi/particle-swarm-optimized-clustering=
 
 #use
-
+```python
+import swarmk as sw
 ```
-from swarm.pso import ParticleSwarmOptimizedClustering
-from swarm.particle import quantization_error, calc_sse
-from swarm.utils import normalize
-from swarm.kmeans import KMeans
+
+or
+
+```python
+from swarmk.pso import ParticleSwarmOptimizedClustering
+from swarmk.particle import quantization_error, calc_sse
+from swarmk.utils import normalize
+from swarmk.kmeans import KMeans
 ```
