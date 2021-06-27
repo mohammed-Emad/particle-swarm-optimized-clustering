@@ -5,11 +5,12 @@ with open("README.rst", "r") as fh:
     
 setup(
     name='swarmk',
-    version='0.0.1',
-    description='a pip install swarmk',
+    version='0.0.2',
+    description='pip install swarmk',
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
+    'url': 'https://github.com/mohammed-Emad/particle-swarm-optimized-clustering',
     packages=['swarmk'],
     classifiers=[
         "Programming Language :: Python :: 3",
