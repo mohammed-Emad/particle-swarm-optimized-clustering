@@ -3,7 +3,7 @@
 
 import numpy as np
 
-from kmeans import KMeans, calc_sse
+from .kmeans import KMeans, calc_sse
 
 
 def quantization_error(centroids: np.ndarray, labels: np.ndarray, data: np.ndarray) -> float:
