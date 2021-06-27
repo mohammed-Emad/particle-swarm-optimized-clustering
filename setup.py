@@ -4,22 +4,23 @@ with open("README.rst", "r") as fh:
     long_description = fh.read()
     
 setup(
-    name='icdar_tools',
-    version='0.0.3',
-    description='a pip install icdar_tools',
+    name='swarmk',
+    version='0.0.1',
+    description='a pip install swarmk',
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
-    packages=['icdar_tools'],
+    packages=['swarmk'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     author='mlib_4_you',
-    author_email='none.none@gmail.com',
+    author_email='Atlantes0land@gmail.com',
     install_requires = [
-        'shapely',
+        'numpy',
+        'pandas',
     ],
-    keywords=['icdar data tools' ,'East tools']
+    keywords=['swarm' ,'swarmk' ,'swarm lib' ,'pos' ,'swarm clustering', 'particle-swarm-optimized-clustering']
 )
