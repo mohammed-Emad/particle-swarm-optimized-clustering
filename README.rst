@@ -1,5 +1,5 @@
 # The original code for the library is here
-(dandynaufaldi/particle-swarm-optimized-clustering)[https://github.com/dandynaufaldi/particle-swarm-optimized-clustering=
+https://github.com/dandynaufaldi/particle-swarm-optimized-clustering
 
 #use
 ```python
