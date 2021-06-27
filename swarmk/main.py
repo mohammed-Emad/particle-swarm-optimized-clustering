@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 
-from pso import ParticleSwarmOptimizedClustering
-from utils import normalize
+from .pso import ParticleSwarmOptimizedClustering
+from .utils import normalize
 if __name__ == "__main__":
     data = pd.read_csv('seed.txt', sep='\t', header=None)
     x = data.drop([7], axis=1)
