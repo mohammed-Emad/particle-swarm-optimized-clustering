@@ -4,7 +4,7 @@ Optimizing centroid using K-Means style. In hybrid mode will use K-Means to seed
 import numpy as np
 
 from .particle import Particle
-
+import numba
 
 class ParticleSwarmOptimizedClustering:
     def __init__(self,
@@ -26,7 +26,7 @@ class ParticleSwarmOptimizedClustering:
         self.gbest_centroids = None
         self.gbest_sse = np.inf
         self._init_particles()
-
+    @numba.jit
     def _init_particles(self):
         for i in range(self.n_particles):
             particle = None
@@ -39,7 +39,7 @@ class ParticleSwarmOptimizedClustering:
                 self.gbest_score = particle.best_score
             self.particles.append(particle)
             self.gbest_sse = min(particle.best_sse, self.gbest_sse)
-
+    @numba.jit
     def run(self):
         print('Initial global best score', self.gbest_score)
         history = []
