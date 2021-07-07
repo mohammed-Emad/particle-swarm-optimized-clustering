@@ -2,7 +2,7 @@
 """
 
 import numpy
-
+import numba
 
 def calc_sse(centroids: numpy.ndarray, labels: numpy.ndarray, data: numpy.ndarray):
     distances = 0
@@ -66,7 +66,7 @@ class KMeans:
         self.seed = seed
         self.centroid = None
         self.SSE = None
-
+    @numba.jit
     def fit(self, data: numpy.ndarray):
         """Fit K-Means algorithm to given data
 
