@@ -66,7 +66,7 @@ class KMeans:
         self.seed = seed
         self.centroid = None
         self.SSE = None
-    @numba.jit
+    
     def fit(self, data: numpy.ndarray):
         """Fit K-Means algorithm to given data
 
@@ -136,7 +136,8 @@ class KMeans:
             centroid = data[idx]
         # print(centroid)
         return centroid
-
+    
+    @numba.jit
     def _calc_distance(self, data: numpy.ndarray):
         """Calculate distance between data and centroids
 
