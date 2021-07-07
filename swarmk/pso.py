@@ -41,7 +41,7 @@ class ParticleSwarmOptimizedClustering:
             self.particles.append(particle)
             self.gbest_sse = min(particle.best_sse, self.gbest_sse)
             
-    @numba.njit()
+    @numba.jit
     def run(self):
         print('Initial global best score', self.gbest_score)
         history = []
