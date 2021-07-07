@@ -2,11 +2,9 @@
 """
 
 import numpy as np
-import numba
 
 from .kmeans import KMeans, calc_sse
 
-@numba.njit()
 def quantization_error(centroids: np.ndarray, labels: np.ndarray, data: np.ndarray) -> float:
     error = 0.0
     for i, c in enumerate(centroids):
