@@ -66,7 +66,7 @@ class KMeans:
         self.seed = seed
         self.centroid = None
         self.SSE = None
-    
+    @numba.jit
     def fit(self, data: numpy.ndarray):
         """Fit K-Means algorithm to given data
 
@@ -103,7 +103,8 @@ class KMeans:
         cluster = self._assign_cluster(distance)
         # print(cluster.shape)
         return cluster
-
+    
+    @numba.jit
     def _init_centroid(self, data: numpy.ndarray):
         """Initialize centroid using random method or KMeans++
 
