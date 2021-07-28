@@ -4,6 +4,10 @@
 import numpy
 import numba
 
+def kmeansPSO(n_clusters):
+    from sklearn.cluster import KMeans
+    return KMeans(n_clusters)
+
 def calc_sse(centroids: numpy.ndarray, labels: numpy.ndarray, data: numpy.ndarray):
     distances = 0
     for i, c in enumerate(centroids):
